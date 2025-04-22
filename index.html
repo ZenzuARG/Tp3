@@ -12,6 +12,7 @@
   <nav class="navbar">
     <div class="container">
       <a href="#" class="navbar-brand"></a>
+      <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
       <ul class="navbar-menu">
         <li><a href="#home">Inicio</a></li>
         <li><a href="#consejos">Consejos</a></li>
@@ -22,6 +23,16 @@
     </div>
   </nav>
  
+  
+  <script>
+    function toggleMenu() {
+      const toggle = document.querySelector('.navbar-toggle');
+      const menu = document.querySelector('.navbar-menu');
+      toggle.classList.toggle('active');
+      menu.classList.toggle('active');
+    }
+  </script>
+  
   <header class="hero" id="home">
     <div class="container">
       <h1 class="hero__title">Bienestar Integral para una Vida Plena</h1>

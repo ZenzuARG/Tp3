@@ -1,4 +1,5 @@
 @use '../utils/variables' as variables;
+
 .navbar {
   background-color: variables.$primary-color;
   padding: variables.$space-sm;
@@ -6,6 +7,7 @@
   top: 0;
   z-index: 10;
 }
+
 .navbar-brand {
   width: 70px;
   height: 20px;
@@ -13,23 +15,45 @@
   text-decoration: none;
   background: url('../assets/img/hero.png') center/cover no-repeat;
 }
+
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .navbar-menu {
   list-style: none;
   display: flex;
   gap: variables.$space-sm;
+
+  @media (max-width: 675px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: variables.$primary-color;
+    flex-direction: column;
+    gap: 0;
+  }
 }
+
+.navbar-menu li {
+  @media (max-width: 675px) {
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+  }
+}
+
 .navbar-menu li a {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
   background-color: variables.$secondary-color;
   border-radius: 4px;
-  font-weight: 500;
+  font-weight: 400;
   transition: all 0.3s ease;
 
   &:hover {
@@ -40,5 +64,25 @@
   &:active {
     background-color: rgba(255, 255, 255, 0.3);
   }
+
+  @media (max-width: 675px) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  background-color: variables.$secondary-color;
+  padding: 0.5rem;
+  border-radius: 4px;
+
+  @media (max-width: 675px) {
+    display: block;
+  }
+}
+
+.navbar-toggle.active + .navbar-menu {
+  display: flex;
+}
