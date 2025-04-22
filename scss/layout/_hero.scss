@@ -1,0 +1,21 @@
+.hero {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('../assets/img/hero_background.jpg') center/cover no-repeat;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+  
+    &__title {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  
+    &__subtitle {
+      font-size: 1.5rem;
+      margin: 1rem 0 2rem;
+    }
+  }
+  
