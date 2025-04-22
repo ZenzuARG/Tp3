@@ -10,37 +10,57 @@
 
   <nav class="navbar">
     <div class="container">
-      <a href="#" class="navbar-brand">MiWeb</a>
+      <a href="#" class="navbar-brand">ZenSalud</a>
       <ul class="navbar-menu">
         <li><a href="#home">Inicio</a></li>
+        <li><a href="#consejos">Consejos</a></li>
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </div>
   </nav>
-
-  <header>
-    <h1>Bienvenido a tu espacio de salud y bienestar</h1>
-    <p class="lead">En nuestra página encontrarás todo lo que necesitas para llevar un estilo de vida saludable y equilibrado. Nos apasiona ayudarte a mejorar tu bienestar físico y mental a través de consejos prácticos, rutinas de ejercicio, recetas saludables y mucho más. Ya sea que estés buscando perder peso, aumentar tu energía o simplemente sentirte mejor, aquí encontrarás recursos valiosos para lograrlo.</p>
+ 
+  <header class="hero" id="home">
+    <div class="container">
+      <h1 class="hero__title">Bienestar Integral para una Vida Plena</h1>
+      <p class="hero__subtitle">Nutrición. Ejercicio. Salud Mental.</p>
+    </div>
   </header>
 
-  <section id="home">
-    <h2>Inicio</h2>
-    <h3>Consejos para una vida saludable</h3>
+  <section id="info" class="info container">
+    <h2 class="section-title">¿Qué es el bienestar?</h2>
+    <p class="section-description">
+      El bienestar es un estado de salud física, mental y emocional. En ZenSalud te ayudamos a lograr un estilo de vida equilibrado con herramientas prácticas, consejos útiles y un enfoque holístico.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/img/comida_saludable.jpg" alt="Comida saludable">
+        <h3>Nutrición saludable</h3>
+        <p>Una dieta balanceada previene enfermedades y mejora tu energía. Incorporá frutas, verduras, cereales integrales y proteínas de calidad.</p>
+      </div>
+      <div class="card">
+        <img src="assets/img/ejercicio_al_aire_libre.jpg" alt="Ejercicio al aire libre">
+        <h3>Actividad física</h3>
+        <p>30 minutos de ejercicio al día mejoran tu salud cardiovascular, reducen el estrés y fortalecen tu sistema inmunológico.</p>
+      </div>
+      <div class="card">
+        <img src="assets/img/meditacion.jpg" alt="Meditación y salud mental">
+        <h3>Salud mental</h3>
+        <p>La meditación, el descanso adecuado y una actitud positiva son claves para mantener el equilibrio emocional.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="consejos">
+    <h2>Consejos para una vida saludable</h2>
     <p>La alimentación es fundamental para mantener una buena salud. Aquí encontrarás recomendaciones sobre qué alimentos incluir en tu dieta diaria para mejorar tu salud. Hablamos sobre:</p>
     <ul>
       <li>Superalimentos: Alimentos ricos en nutrientes que pueden mejorar tu rendimiento y salud general, como el aguacate, la quinoa, y las semillas de chía.</li>
       <li>Dietas para diferentes objetivos: Ya sea que busques perder peso, ganar músculo o mejorar tu digestión, te ofrecemos planes de alimentación adaptados a tus necesidades.</li>
     </ul>
-  </section>
-
-  <section>
     <h2>Nutrición balanceada</h2>
     <p>Somos un equipo de profesionales apasionados por la salud y el bienestar. Nuestro objetivo es brindarte información confiable y actualizada para que puedas tomar decisiones informadas sobre tu salud. Creemos que cada persona es única y merece un enfoque personalizado en su camino hacia el bienestar.</p>
-  </section>
-
-  <section>
     <h2>Ejercicio y actividad física</h2>
     <p>Realizar actividad física regularmente es clave para mantener un cuerpo saludable. Desde ejercicios para tonificar hasta rutinas de relajación para reducir el estrés, te mostramos cómo incorporar el ejercicio en tu vida diaria.</p>
     <ul>
@@ -83,7 +103,6 @@
 
   <section id="contacto" class="contact container">
     <h2>Contacto</h2>
-    <p>Si tienes alguna pregunta, escríbenos:</p>
     <form action="#" method="POST" class="contact-form">
       <div class="form-group">
         <label for="name">Nombre</label>

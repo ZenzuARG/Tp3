@@ -5,6 +5,10 @@
   gap: variables.$space-md;
   grid-template-columns: 1fr;
 
+  @include mixins.respond-to(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @include mixins.respond-to(md) {
     grid-template-columns: repeat(3, 1fr);
   }
