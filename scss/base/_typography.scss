@@ -1,0 +1,10 @@
+@use '../utils/variables' as variables;
+body {
+  font-family: variables.$font-main;
+  color: variables.$dark-color;
+  line-height: 1.6;
+  background-color: variables.$light-color;
+}
+h1, h2, h3 {
+  color: variables.$primary-color;
+}

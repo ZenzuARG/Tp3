@@ -1,0 +1,26 @@
+@use '../utils/variables' as variables;
+.navbar {
+  background-color: variables.$primary-color;
+  padding: variables.$space-sm;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: variables.$space-sm;
+}
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.navbar-menu li a:hover {
+  color: variables.$light-color;
+}

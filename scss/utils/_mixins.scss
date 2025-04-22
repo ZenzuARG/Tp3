@@ -1,0 +1,8 @@
+@use 'breakpoints' as breakpoints;
+@use 'sass:map';
+
+@mixin respond-to($breakpoint) {
+  @media (min-width: map.get(breakpoints.$breakpoints, $breakpoint)) {
+    @content;
+  }
+}

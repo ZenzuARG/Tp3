@@ -1,0 +1,97 @@
+@use '../utils/variables' as variables;
+@use '../utils/mixins'    as mixins;
+@use 'sass:color';
+
+.contact {
+    background-color: variables.$light-color;
+    padding: variables.$space-lg 0;
+    text-align: center;
+  
+    h2 {
+      font-size: rem(24, 16);
+      color: variables.$primary-color;
+      margin-bottom: variables.$space-md;
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: rem(16, 16);
+      margin-bottom: variables.$space-lg;
+      color: variables.$dark-color;
+    }
+  
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: variables.$space-md;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(variables.$dark-color, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 20px rgba(variables.$dark-color, 0.2);
+      }
+  
+      .form-group {
+        margin-bottom: variables.$space-md;
+        text-align: left;
+  
+        label {
+          display: block;
+          margin-bottom: variables.$space-sm;
+          font-weight: bold;
+          color: variables.$primary-color;
+        }
+  
+        input,
+        textarea {
+          width: 100%;
+          padding: variables.$space-sm;
+          border: 2px solid variables.$grey-color ;
+          border-radius: 4px;
+          font-size: rem(14, 16);
+          resize: vertical;
+          transition: border-color 0.3s ease;
+  
+          &:focus {
+            outline: none;
+            border-color: variables.$primary-color;
+          }
+        }
+      }
+  
+      button {
+        display: block;
+        width: 100%;
+        padding: variables.$space-sm;
+        background-color: variables.$primary-color;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: rem(16, 16);
+        cursor: pointer;
+        transition: background 0.3s ease;
+  
+        &:hover {
+          background-color: variables.$secondary-color;
+        }
+      }
+    }
+  
+    // Responsive: en pantallas grandes, dos columnas
+    @include mixins.respond-to(md) {
+      .contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: variables.$space-md;
+  
+        .form-group {
+          &:last-child { grid-column: span 2; }
+        }
+  
+        button { grid-column: span 2; }
+      }
+    }
+  }

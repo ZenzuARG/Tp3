@@ -1,0 +1,11 @@
+@use '../utils/variables' as variables;
+@use '../utils/mixins' as mixins;
+.cards {
+  display: grid;
+  gap: variables.$space-md;
+  grid-template-columns: 1fr;
+
+  @include mixins.respond-to(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

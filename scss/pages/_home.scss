@@ -1,0 +1,6 @@
+@use '../utils/variables' as variables;
+#home {
+  padding: variables.$space-lg variables.$space-md;
+  background-color: variables.$light-color;
+  text-align: center;
+}

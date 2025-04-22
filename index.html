@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Responsive Completo</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">MiWeb</a>
+      <ul class="navbar-menu">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Bienvenido</h1>
+    <p class="lead">Sitio web responsive con SCSS modular y diseño moderno.</p>
+  </header>
+
+  <section id="home">
+    <h2>Inicio</h2>
+    <p>Somos expertos en crear sitios que se ven bien en todos los dispositivos.</p>
+  </section>
+
+  <section id="servicios" class="container">
+    <h2>Servicios</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/img/card1.jpg" alt="Card 1">
+        <div class="card-body">
+          <h3>Diseño</h3>
+          <p>Diseños modernos y accesibles.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/card2.jpg" alt="Card 2">
+        <div class="card-body">
+          <h3>Desarrollo</h3>
+          <p>Frontend con SCSS modular.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/card3.jpg" alt="Card 3">
+        <div class="card-body">
+          <h3>Performance</h3>
+          <p>Webs rápidas y optimizadas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <p>Explorá algunos de nuestros trabajos más recientes.</p>
+  </section>
+
+  <section id="contacto" class="contact container">
+    <h2>Contacto</h2>
+    <p>Si tienes alguna pregunta, escríbenos:</p>
+    <form action="#" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="4" placeholder="Escribe aquí..." required></textarea>
+      </div>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MiWeb. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
