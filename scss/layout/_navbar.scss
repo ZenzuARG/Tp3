@@ -6,6 +6,13 @@
   top: 0;
   z-index: 10;
 }
+.navbar-brand {
+  width: 70px;
+  height: 20px;
+  color: white;
+  text-decoration: none;
+  background: url('../assets/img/hero.png') center/cover no-repeat;
+}
 .navbar .container {
   display: flex;
   justify-content: space-between;
@@ -19,8 +26,19 @@
 .navbar-menu li a {
   color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  background-color: variables.$secondary-color;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: variables.$light-color;
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
-.navbar-menu li a:hover {
-  color: variables.$light-color;
-}
+

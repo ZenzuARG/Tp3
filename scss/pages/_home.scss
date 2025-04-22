@@ -24,3 +24,33 @@
     margin: variables.$space-sm;
   }
 }
+#nosotros {
+  background-color: variables.$light-color;
+  padding: variables.$space-lg variables.$space-md;
+  text-align: center;
+  h2 {
+    margin-bottom: variables.$space-md;
+    text-decoration: underline;
+  }
+  li {
+    text-align: left;
+    margin: variables.$space-sm;
+  }
+}
+#historias {
+  background-color: variables.$light-color;
+  padding: variables.$space-lg variables.$space-md;
+  text-align: center;
+  h2 {
+    margin-bottom: variables.$space-md;
+    text-decoration: underline;
+  }
+  li {
+    text-align: left;
+    margin: variables.$space-sm;
+  }
+  p {
+    text-align: center;
+    margin: variables.$space-sm;
+  }
+}

@@ -79,7 +79,6 @@
       }
     }
   
-    // Responsive: en pantallas grandes, dos columnas
     @include mixins.respond-to(md) {
       .contact-form {
         display: grid;
